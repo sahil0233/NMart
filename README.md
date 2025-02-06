@@ -1,8 +1,22 @@
-# React + Vite
+# N-Mart -B2B E-commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a modern web application built using the latest technologies to ensure fast performance, scalability, and ease of development. It leverages Vite for efficient bundling, Tailwind CSS for styling, and Firebase for backend services, including Firestore for database management, authentication for user verification, and Firebase Storage for handling media assets.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **Vite**: A fast and optimized build tool for frontend development.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Firebase**:
+  - **Firestore**: A NoSQL cloud database for real-time data storage and retrieval.
+  - **Authentication**: Secure and flexible user authentication system.
+  - **Storage**: Cloud storage for managing user files, images, and other media assets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fast and efficient frontend development with Vite.
+- Responsive UI using Tailwind CSS.
+- Secure authentication system powered by Firebase Authentication.
+- Real-time database interactions using Firestore.
+- Cloud storage support for handling media uploads.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
