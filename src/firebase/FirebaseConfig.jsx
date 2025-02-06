@@ -8,14 +8,25 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+const apiKey = import.meta.env.VITE_APP_API_KEY
+const authDomain = import.meta.env.VITE_APP_AUTH_DOMAIN
+const projectId = import.meta.env.VITE_APP_PROJECT_ID
+const storageBucket = import.meta.env.VITE_APP_STORAGE_BUCKET
+const messagingSenderId = import.meta.env.VITE_APP_MESSAGE_SENDER_ID
+const appId = import.meta.env.VITE_APP_APP_ID
+const measurementId = import.meta.env.VITE_APP_MEASUREMENT_ID
+
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAp4yN67uEQ-rThw9FYwfelWjTkDzc2fDA",
-  authDomain: "ajmerclient.firebaseapp.com",
-  projectId: "ajmerclient",
-  storageBucket: "ajmerclient.appspot.com",
-  messagingSenderId: "846509056495",
-  appId: "1:846509056495:web:29267fc981802690b2d61a",
-  measurementId: "G-RMVC0ZBYN1"
+  apiKey: apiKey,
+  authDomain: authDomain,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId,
+  measurementId: measurementId
 };
 
 // Initialize Firebase
