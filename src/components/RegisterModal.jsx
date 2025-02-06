@@ -26,7 +26,6 @@ const RegisterModal = (props) => {
     });
 
     const [loading, setLoading] = useState(false);
-    const [phone, setPhone] = useState("");
     const [user,setUser] = useState(null);
     const [otp,setOtp] = useState("");
     const [showOtpInput, setShowOtpInput] = useState(false);
@@ -34,8 +33,7 @@ const RegisterModal = (props) => {
 
     
     
-    useEffect(() => {
-        
+    useEffect(() => { 
         const auth = getAuth();
         try{
         window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
@@ -165,7 +163,7 @@ const RegisterModal = (props) => {
   return (
     <div className={` ${props.modal?"":"hidden"} bg-opacity-60 h-screen w-screen absolute bg-black text-gray-900 flex flex-row justify-center items-center`}>
     {loading && <Loader />}
-    <div className="max-w-screen-md h-5/6 max-h-[768px]   bg-white shadow sm:rounded-lg overflow-auto mx-2 sm:mx-12">
+    <div className="relative p-10 max-w-screen-md h-5/6 max-h-[768px]   bg-white shadow sm:rounded-lg overflow-auto mx-2 sm:mx-12">
         {showOtpInput?
            <div className="">
             <div>
@@ -288,9 +286,9 @@ const RegisterModal = (props) => {
 
         }
         
+    <div className='absolute left-2 top-2 cursor-pointer border-2' onClick={() => {props.setModal(false)}}><XMarkIcon className="h-6 w-6" color='black' aria-hidden="true" /></div>
     </div>
     {/* x mark to close modal */}
-    {/* <div className='h-5/6 max-h-[768px] ml-2 cursor-pointer' onClick={() => {props.setModal(false)}}><XMarkIcon className="h-6 w-6" color='white' aria-hidden="true" /></div> */}
     
     </div>
     
